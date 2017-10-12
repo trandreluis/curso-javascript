@@ -1,6 +1,7 @@
 // function declaration
 
 function somar(a, b) {
+	console.log(arguments);
 	return a + b;
 }
 
@@ -15,3 +16,5 @@ console.log('Soma de 2 + 3 = ', soma);
 
 var subtracao = subtrair(8, 2);
 console.log('Subtração de 8 - 2 = ', subtracao);
+
+console.log('Type of subtrair:', typeof subtrair);
