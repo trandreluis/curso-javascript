@@ -7,8 +7,11 @@ $(function() {
 	});
 
 	resposta.done(function(estados) {
-		estados.forEach(function(elemento) {
-			console.log(elemento);
+		var comboEstado = $('#combo-estado');
+		comboEstado.html('<option>Selecione o estado</option>');
+		estados.forEach(function(estado) {
+			var optionEstado = $('<option>').val(estado.uf).text(estado.nome);
+			comboEstado.append(optionEstado);
 		});
 	});
 
