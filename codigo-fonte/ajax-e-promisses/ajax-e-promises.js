@@ -1,5 +1,4 @@
 $(function() {
-	
 	var resposta = $.ajax({
 		url: 'http://localhost:8080/estados',
 		method: 'GET',
